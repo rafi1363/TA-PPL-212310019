@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-07-07 21:57:50</p>
+                <p class='attribute'><strong>Duration: </strong>82.32 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 3, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestAdmin</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_add_user</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_add_user_failure_unselect_userRole_status</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0036C1C3+27395]
+	(No symbol) [0x00303DC4]
+	(No symbol) [0x00201B7F]
+	(No symbol) [0x00242C65]
+	(No symbol) [0x00242D3B]
+	(No symbol) [0x0027EC82]
+	(No symbol) [0x002639E4]
+	(No symbol) [0x0027CB24]
+	(No symbol) [0x00263736]
+	(No symbol) [0x00237541]
+	(No symbol) [0x002380BD]
+	GetHandleVerifier [0x00623A93+2876371]
+	GetHandleVerifier [0x00677F5D+3221661]
+	GetHandleVerifier [0x003ED634+556916]
+	GetHandleVerifier [0x003F474C+585868]
+	(No symbol) [0x0030CE04]
+	(No symbol) [0x00309818]
+	(No symbol) [0x003099B7]
+	(No symbol) [0x002FBF0E]
+	BaseThreadInitThunk [0x770B7BA9+25]
+	RtlInitializeExceptionChain [0x77B3C10B+107]
+	RtlClearBits [0x77B3C08F+191]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Document\PPL\OrangeHRM_Testing\TestScript.py", line 76, in test_add_user_failure_unselect_userRole_status
+    admin_menu = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".oxd-main-menu-item")))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0036C1C3+27395]
+	(No symbol) [0x00303DC4]
+	(No symbol) [0x00201B7F]
+	(No symbol) [0x00242C65]
+	(No symbol) [0x00242D3B]
+	(No symbol) [0x0027EC82]
+	(No symbol) [0x002639E4]
+	(No symbol) [0x0027CB24]
+	(No symbol) [0x00263736]
+	(No symbol) [0x00237541]
+	(No symbol) [0x002380BD]
+	GetHandleVerifier [0x00623A93+2876371]
+	GetHandleVerifier [0x00677F5D+3221661]
+	GetHandleVerifier [0x003ED634+556916]
+	GetHandleVerifier [0x003F474C+585868]
+	(No symbol) [0x0030CE04]
+	(No symbol) [0x00309818]
+	(No symbol) [0x003099B7]
+	(No symbol) [0x002FBF0E]
+	BaseThreadInitThunk [0x770B7BA9+25]
+	RtlInitializeExceptionChain [0x77B3C10B+107]
+	RtlClearBits [0x77B3C08F+191]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_add_user_success_all_filled_in</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0036C1C3+27395]
+	(No symbol) [0x00303DC4]
+	(No symbol) [0x00201B7F]
+	(No symbol) [0x00242C65]
+	(No symbol) [0x00242D3B]
+	(No symbol) [0x0027EC82]
+	(No symbol) [0x002639E4]
+	(No symbol) [0x0027CB24]
+	(No symbol) [0x00263736]
+	(No symbol) [0x00237541]
+	(No symbol) [0x002380BD]
+	GetHandleVerifier [0x00623A93+2876371]
+	GetHandleVerifier [0x00677F5D+3221661]
+	GetHandleVerifier [0x003ED634+556916]
+	GetHandleVerifier [0x003F474C+585868]
+	(No symbol) [0x0030CE04]
+	(No symbol) [0x00309818]
+	(No symbol) [0x003099B7]
+	(No symbol) [0x002FBF0E]
+	BaseThreadInitThunk [0x770B7BA9+25]
+	RtlInitializeExceptionChain [0x77B3C10B+107]
+	RtlClearBits [0x77B3C08F+191]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Document\PPL\OrangeHRM_Testing\TestScript.py", line 109, in test_add_user_success_all_filled_in
+    admin_menu = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".oxd-main-menu-item")))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0036C1C3+27395]
+	(No symbol) [0x00303DC4]
+	(No symbol) [0x00201B7F]
+	(No symbol) [0x00242C65]
+	(No symbol) [0x00242D3B]
+	(No symbol) [0x0027EC82]
+	(No symbol) [0x002639E4]
+	(No symbol) [0x0027CB24]
+	(No symbol) [0x00263736]
+	(No symbol) [0x00237541]
+	(No symbol) [0x002380BD]
+	GetHandleVerifier [0x00623A93+2876371]
+	GetHandleVerifier [0x00677F5D+3221661]
+	GetHandleVerifier [0x003ED634+556916]
+	GetHandleVerifier [0x003F474C+585868]
+	(No symbol) [0x0030CE04]
+	(No symbol) [0x00309818]
+	(No symbol) [0x003099B7]
+	(No symbol) [0x002FBF0E]
+	BaseThreadInitThunk [0x770B7BA9+25]
+	RtlInitializeExceptionChain [0x77B3C10B+107]
+	RtlClearBits [0x77B3C08F+191]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login_failure_incorect_password</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login_failure_incorect_username_password</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 3, Error: 2 -- Duration: 82.32 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
